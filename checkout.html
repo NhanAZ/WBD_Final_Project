@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cửa hàng Trò chơi - Đặt Hàng</title>
-    <link rel="stylesheet" href="static/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cửa hàng Trò chơi - Đặt Hàng</title>
+	<link rel="stylesheet" href="static/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html">Cửa hàng Trò chơi</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Sản phẩm</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cart.html">Giỏ hàng</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="checkout.html">Đặt hàng</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="payment.html">Thanh toán</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="index.html">Cửa hàng Trò chơi</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Sản phẩm</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cart.html">Giỏ hàng</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="checkout.html">Đặt hàng</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="payment.html">Thanh toán</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-<div class="container my-4">
-    <h2>Đặt hàng</h2>
-    <form id="checkout-form">
-        <div class="form-group">
-            <label for="name">Họ tên</label>
-            <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="form-group">
-            <label for="address">Địa chỉ</label>
-            <input type="text" class="form-control" id="address" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Đặt hàng</button>
-    </form>
-</div>
+	<div class="container my-4">
+		<h2>Đặt hàng</h2>
+		<form id="checkout-form">
+			<div class="form-group">
+				<label for="name">Họ tên</label>
+				<input type="text" class="form-control" id="name" required>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" required>
+			</div>
+			<div class="form-group">
+				<label for="address">Địa chỉ</label>
+				<input type="text" class="form-control" id="address" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Đặt hàng</button>
+		</form>
+	</div>
 
-<script src="static/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="static/bootstrap/4.5.2/css/bootstrap.min.css"></script>
-<script src="static/js/checkout.js"></script>
+	<script src="static/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="static/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+	<script src="static/js/checkout.js"></script>
 </body>
+
 </html>
