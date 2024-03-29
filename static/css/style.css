@@ -1,0 +1,6 @@
+/* class selector, áp dụng cho các thẻ có class là "card-img-top" */
+.card-img-top {
+    width: 100%; /* Đặt chiều rộng của hình ảnh bằng 100% của phần tử chứa nó */
+    height: 200px; /* Đặt chiều cao của hình ảnh là 200px */
+    object-fit: contain; /* Hình ảnh sẽ được hiển thị toàn bộ trong kích thước đã định nghĩa và không bị cắt bớt. Nếu hình ảnh không đủ lớn để điền vào kích thước đã định, nó sẽ được co lại để vừa vặn. */
+}
