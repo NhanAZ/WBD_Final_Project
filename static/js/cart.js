@@ -6,20 +6,19 @@ $(document).ready(function () {
 	// Hàm tạo một hàng mới trong bảng giỏ hàng
 	function createRow(item) {
 		return `
-			<tr>
-				<td>${item.name}</td> <!-- Tên sản phẩm -->
-				<td>$${item.price.toFixed(2)}</td> <!-- Giá sản phẩm -->
-				<td class="product-total">$${(item.price * item.quantity).toFixed(2)}</td> <!-- Tổng giá của sản phẩm -->
-				<td>
-					<button class="btn btn-danger remove-product" data-id="${item.id}">Xóa</button> <!-- Nút xóa sản phẩm -->
-				</td>
-			</tr>
-		`;
+        <tr>
+            <td>${item.name}</td>
+            <td>$${item.price.toFixed(2)}</td>
+            <td>
+                <button class="btn btn-danger remove-product" data-id="${item.id}">Xóa</button>
+            </td>
+        </tr>
+    `;
 	}
 
 	// Hàm tính tổng giá trị giỏ hàng
 	function calculateTotal(cart) {
-		return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+		return cart.reduce((total, item) => total + item.price, 0);
 	}
 
 	// Hàm hiển thị giỏ hàng

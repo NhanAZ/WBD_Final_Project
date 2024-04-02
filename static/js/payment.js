@@ -22,7 +22,7 @@ $(document).ready(function () {
             </tr>
           `;
 			orderSummary.append(row); // Thêm thông tin sản phẩm vào thông tin đơn hàng
-			orderTotal += item.price * item.quantity; // Cập nhật tổng giá trị đơn hàng
+			orderTotal += item.price; // Cập nhật tổng giá trị đơn hàng
 		});
 		$('#order-total').text(`$${orderTotal.toFixed(2)}`); // Hiển thị tổng giá trị đơn hàng
 	}

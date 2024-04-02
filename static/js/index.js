@@ -32,19 +32,21 @@ $(document).ready(function () {
 
 	// Hàm thêm sản phẩm vào giỏ hàng
 	function addToCart(productId) {
-		let product = products.find(p => p.id === productId); // Tìm sản phẩm theo id
-		if (!product) { // Nếu không tìm thấy sản phẩm
+		const product = products.find(p => p.id === productId);
+		if (!product) {
 			alert('Sản phẩm không tồn tại.');
 			return;
 		}
-		let cartItem = cart.find(p => p.id === productId); // Tìm sản phẩm trong giỏ hàng
-		if (cartItem) { // Nếu sản phẩm đã có trong giỏ hàng
+
+		const cartItem = cart.find(item => item.id === productId);
+		if (cartItem) {
 			alert(`${product.name} đã có trong giỏ hàng.`);
-		} else { // Nếu sản phẩm chưa có trong giỏ hàng
-			cart.push({ id: product.id, name: product.name, price: product.price, quantity: 1 }); // Thêm sản phẩm vào giỏ hàng
-			localStorage.setItem('cart', JSON.stringify(cart)); // Cập nhật giỏ hàng trong localStorage
-			alert(`${product.name} đã được thêm vào giỏ hàng.`);
+			return;
 		}
+
+		cart.push({ id: product.id, name: product.name, price: product.price});
+		localStorage.setItem('cart', JSON.stringify(cart));
+		alert(`${product.name} đã được thêm vào giỏ hàng.`);
 	}
 
 	// Hàm hiển thị sản phẩm
