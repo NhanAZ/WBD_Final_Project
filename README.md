@@ -6,6 +6,7 @@
   + 2310010012 - Phan Thành Lộc - CNTT1 - K25 - CTIM
 - Đề tài: Website bán game
 
+## HƯỚNG DẪN THỰC HIỆN ĐỒ ÁN
 ### Mục tiêu đồ án
 Sau khi hoàn thành đồ án, sinh viên có thể:
 1. Thiết kế layout giao diện trang Web
