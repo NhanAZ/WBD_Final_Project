@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 	function createProductCard(product) {
 		return `
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 product-card" data-name="${product.name.toLowerCase()}" data-description="${product.description.toLowerCase()}">
                 <div class="card">
                     <img src="${product.image}" class="card-img-top" alt="${product.name}">
                     <div class="card-body">
@@ -55,5 +55,18 @@ $(document).ready(function () {
 	$('#product-list').on('click', '.add-to-cart', function () {
 		let productId = $(this).data('id');
 		addToCart(productId);
+	});
+
+	$('#search-bar').on('input', function () {
+		const query = $(this).val().toLowerCase();
+		$('.product-card').each(function () {
+			const name = $(this).data('name');
+			const description = $(this).data('description');
+			if (name.includes(query) || description.includes(query)) {
+				$(this).show();
+			} else {
+				$(this).hide();
+			}
+		});
 	});
 });
